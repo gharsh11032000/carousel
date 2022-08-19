@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+/* Image container */
+.image_container {
+  background-color: aliceblue;
+  transform: translateX(-600px);
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Image */
+.image {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+
+/* Buttons */
+.btn {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: #fff;
+  color: orange;
+  margin-top: -0.8rem;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.right {
+  right: 5%;
+}
+
+.left {
+  left: 5%;
+}
